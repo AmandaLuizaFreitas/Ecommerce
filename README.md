@@ -11,5 +11,5 @@
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [JAVASCRIPT](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
   
-### Link
-[Link](https://ecommerce-e482wqd7u-amandaluizafreitas-projects.vercel.app/)
+### 🔗 Acesse o Projeto
+- [Link](https://ecommerce-e482wqd7u-amandaluizafreitas-projects.vercel.app/)
