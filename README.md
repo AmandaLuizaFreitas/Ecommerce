@@ -12,4 +12,4 @@
 - [JAVASCRIPT](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
   
 ### Link
-[Link](https://vercel.com/amandaluizafreitas-projects/ecommerce/51n3eubm31UTs2NPHdsMfARPTiDY)
+[Link](https://ecommerce-e482wqd7u-amandaluizafreitas-projects.vercel.app/)
