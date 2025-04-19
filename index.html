@@ -1,11 +1,1538 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ecommerce</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- ICONS BOXICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- or -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <!------ SALE BAR -->
+    <div class="sale-bar">
+      <p class="sale-text title-small">
+        Ganhe <span class="purple-bar">R$10,00 </span> de desconto no seu
+        primeiro pedido. Utilize o cupom
+        <span class="extra-light">DESCONTO10</span>
+      </p>
+    </div>
+
+    <header>
+      <div class="container">
+        <div class="mobile">
+          <div class="mobile-header">
+            <button
+              class="nav-toggle-btn"
+              data-nav-toggler
+              aria-label="toggle navbar"
+            >
+              <span class="btn-bar"></span>
+              <span class="btn-bar"></span>
+              <span class="btn-bar"></span>
+            </button>
+            <a
+              href="https://penseavanti.com.br/"
+              class="logo"
+              alt="logo"
+              target="_blank"
+            >
+              <img src="./assets/imgs/icons/logo.png" alt="logo" />
+            </a>
+            <div class="badge">
+              <sup>2</sup>
+              <i class="bx bx-cart"></i>
+            </div>
+          </div>
+          <div class="header-search">
+            <input
+              type="text"
+              id="mobile-search-input"
+              placeholder="Digite aqui o que você procura"
+            />
+            <button id="mobile-search-button" class="search-button">
+              <i class="bx bx-search-alt-2"></i>
+            </button>
+          </div>
+        </div>
+        <div class="desktop">
+          <div class="desktop-header">
+            <a href="#" target="_blank">
+              <img src="./assets/imgs/icons/logo.png" alt="logo" />
+            </a>
+            <div class="header-search">
+              <input
+                type="text"
+                class="desktop-search-input"
+                placeholder="Digite aqui o que você procura"
+              />
+              <div id="desktop-search-button">
+                <i class="bx bx-search-alt-2"></i>
+              </div>
+            </div>
+            <div class="person-badge">
+              <div class="person">
+                <i class="bx bx-user"></i>
+                <div class="person-text">
+                  <p class="bold">Olá,</p>
+                  <p class="client">Nome cliente!</p>
+                </div>
+              </div>
+              <div class="badge">
+                <sup>2</sup>
+                <i class="bx bx-cart"></i>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-footer">
+            <nav class="navbar">
+              <div class="menu">
+                <div class="menu-item" onclick="toggleSubmenu(0)">
+                  <div class="categories navbar-item" id="dropdown-btn">
+                    <button
+                      class="nav-toggle-btn"
+                      data-nav-toggler
+                      aria-label="toggle navbar"
+                    >
+                      <span class="btn-bar"></span>
+                      <span class="btn-bar"></span>
+                      <span class="btn-bar"></span>
+                    </button>
+                    <span class="body-large"> Todas as Categorias </span>
+                  </div>
+                  <div class="submenu" id="submenu-0">
+                    <ul class="submenu-list0">
+                      <li class="submenu-list-item active submenu-title">
+                        Departamento
+                        <span class="arrow">›</span>
+                      </li>
+                      <li class="submenu-list-item submenu-title">
+                        Departamento
+                        <span class="arrow">›</span>
+                      </li>
+                      <li class="submenu-list-item submenu-title">
+                        Departamento
+                        <span class="arrow">›</span>
+                      </li>
+                      <li class="submenu-list-item submenu-title">
+                        Departamento
+                        <span class="arrow">›</span>
+                      </li>
+                      <li class="submenu-list-item submenu-title">
+                        Departamento
+                        <span class="arrow">›</span>
+                      </li>
+                      <li class="submenu-list-item submenu-title">
+                        Departamento
+                        <span class="arrow">›</span>
+                      </li>
+                      <li class="submenu-list-item submenu-title">
+                        Departamento
+                        <span class="arrow">›</span>
+                      </li>
+                      <li class="submenu-list-item submenu-title">
+                        Departamento
+                        <span class="arrow">›</span>
+                      </li>
+                      <li class="submenu-list-item submenu-title">
+                        Departamento
+                        <span class="arrow">›</span>
+                      </li>
+                      <li class="submenu-list-item submenu-title">
+                        Departamento
+                        <span class="arrow">›</span>
+                      </li>
+                    </ul>
+                    <div class="submenu-list1s">
+                      <ul class="submenu-list1">
+                        <li class="submenu-title active">Categoria</li>
+                        <li class="submenu-title">Categoria</li>
+                        <li class="submenu-title">Categoria</li>
+                        <li class="submenu-title">Categoria</li>
+                        <li class="submenu-title">Categoria</li>
+                        <li class="submenu-title">Categoria</li>
+                        <li class="submenu-title">Categoria</li>
+                        <li class="submenu-title">Categoria</li>
+                      </ul>
+                      <ul class="submenu-list1">
+                        <li class="submenu-title active">Categoria</li>
+                        <li class="submenu-title">Categoria</li>
+                        <li class="submenu-title">Categoria</li>
+                        <li class="submenu-title">Categoria</li>
+                        <li class="submenu-title">Categoria</li>
+                        <li class="submenu-title">Categoria</li>
+                        <li class="submenu-title">Categoria</li>
+                        <li class="submenu-title">Categoria</li>
+                      </ul>
+                      <ul class="submenu-list1">
+                        <li class="submenu-title active">Categoria</li>
+                        <li class="submenu-title">Categoria</li>
+                        <li class="submenu-title">Categoria</li>
+                        <li class="submenu-title">Categoria</li>
+                        <li class="submenu-title">Categoria</li>
+                        <li class="submenu-title">Categoria</li>
+                        <li class="submenu-title">Categoria</li>
+                        <li class="submenu-title">Categoria</li>
+                      </ul>
+                    </div>
+
+                    <div class="submenu-list">
+                      <div class="banner">
+                        <img
+                          src="./assets/imgs/photo/img-4.png"
+                          alt="Banner"
+                          class="banner-image"
+                        />
+                        <div class="banner-content">
+                          <h3>Confira os Produtos</h3>
+                          <p>Que Acabaram de Chegar</p>
+                          <button>VER TODOS</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu-item" onclick="toggleSubmenu(1)">
+                  <div class="nav-item body-large">Departamento</div>
+                  <div class="submenu" id="submenu-1">
+                    <div class="submenu-list">
+                      <div class="submenu-list1s">
+                        <ul class="submenu-list1">
+                          <h3 class="submenu-title1">Departamento</h3>
+                          <li class="submenu-title active">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                        </ul>
+                        <ul class="submenu-list1">
+                          <li class="submenu-title active">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                        </ul>
+                        <ul class="submenu-list1">
+                          <li class="submenu-title active">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                        </ul>
+                      </div>
+
+                      <div class="submenu-list">
+                        <div class="banner">
+                          <img
+                            src="./assets/imgs/photo/img-4.png"
+                            alt="Banner"
+                            class="banner-image"
+                          />
+                          <div class="banner-content">
+                            <h3>Confira os Produtos</h3>
+                            <p>Que Acabaram de Chegar</p>
+                            <button>VER TODOS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu-item" onclick="toggleSubmenu(2)">
+                  <div class="nav-item body-large">Departamento</div>
+                  <div class="submenu" id="submenu-2">
+                    <div class="submenu-list">
+                      <div class="submenu-list1s">
+                        <ul class="submenu-list1">
+                          <h3 class="submenu-title1">Departamento</h3>
+                          <li class="submenu-title active">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                        </ul>
+                        <ul class="submenu-list1">
+                          <li class="submenu-title active">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                        </ul>
+                        <ul class="submenu-list1">
+                          <li class="submenu-title active">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                        </ul>
+                      </div>
+
+                      <div class="submenu-list1">
+                        <div class="banner">
+                          <img
+                            src="./assets/imgs/photo/img-4.png"
+                            alt="Banner"
+                            class="banner-image"
+                          />
+                          <div class="banner-content">
+                            <h3>Confira os Produtos</h3>
+                            <p>Que Acabaram de Chegar</p>
+                            <button>VER TODOS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu-item" onclick="toggleSubmenu(3)">
+                  <div class="nav-item body-large">Departamento</div>
+                  <div class="submenu" id="submenu-3">
+                    <div class="submenu-list">
+                      <div class="submenu-list1s">
+                        <ul class="submenu-list1">
+                          <h3 class="submenu-title1">Departamento</h3>
+                          <li class="submenu-title active">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                        </ul>
+                        <ul class="submenu-list1">
+                          <li class="submenu-title active">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                        </ul>
+                        <ul class="submenu-list1">
+                          <li class="submenu-title active">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                        </ul>
+                      </div>
+
+                      <div class="submenu-list">
+                        <div class="banner">
+                          <img
+                            src="./assets/imgs/photo/img-4.png"
+                            alt="Banner"
+                            class="banner-image"
+                          />
+                          <div class="banner-content">
+                            <h3>Confira os Produtos</h3>
+                            <p>Que Acabaram de Chegar</p>
+                            <button>VER TODOS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu-item" onclick="toggleSubmenu(4)">
+                  <div class="nav-item body-large">Departamento</div>
+                  <div class="submenu" id="submenu-4">
+                    <div class="submenu-list">
+                      <div class="submenu-list1s">
+                        <ul class="submenu-list1">
+                          <h3 class="submenu-title1">Departamento</h3>
+                          <li class="submenu-title active">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                        </ul>
+                        <ul class="submenu-list1">
+                          <li class="submenu-title active">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                        </ul>
+                        <ul class="submenu-list1">
+                          <li class="submenu-title active">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                          <li class="submenu-title">Categoria</li>
+                        </ul>
+                      </div>
+
+                      <div class="submenu-list">
+                        <div class="banner">
+                          <img
+                            src="./assets/imgs/photo/img-4.png"
+                            alt="Banner"
+                            class="banner-image"
+                          />
+                          <div class="banner-content">
+                            <h3>Confira os Produtos</h3>
+                            <p>Que Acabaram de Chegar</p>
+                            <button>VER TODOS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div id="result" class="result"></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!------ HERO ------>
+        <section class="hero">
+          <div class="container">
+            <div class="hero-content">
+              <div class="hero-img">
+                <img
+                  src="./assets/imgs/photos/img-5.png"
+                  alt="Image de um Produtos"
+                />
+              </div>
+              <div class="hero-info">
+                <h1 class="headline-large hero-title">
+                  Super <span>sale</span>
+                </h1>
+                <p class="hero-text hero-desktop body-medium">
+                  Itens selecionados com até
+                </p>
+                <p class="hero-text hero-mobile body-medium">
+                  Selected items up to
+                </p>
+                <h3 class="hero-subtitle headline-medium">50% off</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!------ CAROUSEL ------>
+        <section class="carousel-section section" id="carousel">
+          <div class="container">
+            <div class="carousel-content">
+              <h2 class="headline-small carousel-title">Lançamentos</h2>
+              <div class="carousel-link">
+                <a href="#" class="body-small">Ver mais</a>
+              </div>
+            </div>
+            <div class="carousels carousel1">
+              <button class="carousel-btn prev" id="prev1">
+                <i class="bx bx-left-arrow-alt"></i>
+              </button>
+              <div class="carousel-slides" id="carousel1-slides">
+                <div class="carousel-set set-1">
+                  <div class="card">
+                    <span class="new-tag">Novo</span>
+                    <img
+                      src="./assets/imgs/photos/img-2.png"
+                      alt="Produto 1"
+                      class="product-img"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title body-large">
+                        Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                      </h3>
+                      <div class="product-prices">
+                        <div class="price">
+                          <s>R$ 100,00</s>
+                          <h2 class="title-medium">R$ 79,90</h2>
+                        </div>
+                        <a href="#" target="_blank" class="btn-off">10% Off</a>
+                      </div>
+                      <div class="product-footer label-small">
+                        <p>Ou em até <span>10x de R$ 7,90</span></p>
+                        <button class="btn">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <span class="new-tag">Novo</span>
+                    <img
+                      src="./assets/imgs/photos/img-2.png"
+                      alt="Produto 1"
+                      class="product-img"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title body-large">
+                        Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                      </h3>
+                      <div class="product-prices">
+                        <div class="price">
+                          <s>R$ 100,00</s>
+                          <h2 class="title-medium">R$ 79,90</h2>
+                        </div>
+                        <a href="#" target="_blank" class="btn-off">10% Off</a>
+                      </div>
+                      <div class="product-footer label-small">
+                        <p>Ou em até <span>10x de R$ 7,90</span></p>
+                        <button class="btn">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <span class="new-tag">Novo</span>
+                    <img
+                      src="./assets/imgs/photos/img-2.png"
+                      alt="Produto 1"
+                      class="product-img"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title body-large">
+                        Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                      </h3>
+                      <div class="product-prices">
+                        <div class="price">
+                          <s>R$ 100,00</s>
+                          <h2 class="title-medium">R$ 79,90</h2>
+                        </div>
+                        <a href="#" target="_blank" class="btn-off">10% Off</a>
+                      </div>
+                      <div class="product-footer label-small">
+                        <p>Ou em até <span>10x de R$ 7,90</span></p>
+                        <button class="btn">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-set set-2">
+                  <div class="card">
+                    <span class="new-tag">Novo</span>
+                    <img
+                      src="./assets/imgs/photos/img-2.png"
+                      alt="Produto 1"
+                      class="product-img"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title body-large">
+                        Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                      </h3>
+                      <div class="product-prices">
+                        <div class="price">
+                          <s>R$ 100,00</s>
+                          <h2 class="title-medium">R$ 79,90</h2>
+                        </div>
+                        <a href="#" target="_blank" class="btn-off">10% Off</a>
+                      </div>
+                      <div class="product-footer label-small">
+                        <p>Ou em até <span>10x de R$ 7,90</span></p>
+                        <button class="btn">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <span class="new-tag">Novo</span>
+                    <img
+                      src="./assets/imgs/photos/img-2.png"
+                      alt="Produto 1"
+                      class="product-img"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title body-large">
+                        Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                      </h3>
+                      <div class="product-prices">
+                        <div class="price">
+                          <s>R$ 100,00</s>
+                          <h2 class="title-medium">R$ 79,90</h2>
+                        </div>
+                        <a href="#" target="_blank" class="btn-off">10% Off</a>
+                      </div>
+                      <div class="product-footer">
+                        <p>Ou em até <span>10x de R$ 7,90</span></p>
+                        <button class="btn">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <span class="new-tag">Novo</span>
+                    <img
+                      src="./assets/imgs/photos/img-2.png"
+                      alt="Produto 1"
+                      class="product-img"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title body-large">
+                        Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                      </h3>
+                      <div class="product-prices">
+                        <div class="price">
+                          <s>R$ 100,00</s>
+                          <h2 class="title-medium">R$ 79,90</h2>
+                        </div>
+                        <a href="#" target="_blank" class="btn-off">10% Off</a>
+                      </div>
+                      <div class="product-footer">
+                        <p>Ou em até <span>10x de R$ 7,90</span></p>
+                        <button class="btn">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-set set-3">
+                  <div class="card">
+                    <span class="new-tag">Novo</span>
+                    <img
+                      src="./assets/imgs/photos/img-2.png"
+                      alt="Produto 1"
+                      class="product-img"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title body-large">
+                        Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                      </h3>
+                      <div class="product-prices">
+                        <div class="price">
+                          <s>R$ 100,00</s>
+                          <h2 class="title-medium">R$ 79,90</h2>
+                        </div>
+                        <a href="#" target="_blank" class="btn-off">10% Off</a>
+                      </div>
+                      <div class="product-footer">
+                        <p>Ou em até <span>10x de R$ 7,90</span></p>
+                        <button class="btn">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <span class="new-tag">Novo</span>
+                    <img
+                      src="./assets/imgs/photos/img-2.png"
+                      alt="Produto 1"
+                      class="product-img"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title body-large">
+                        Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                      </h3>
+                      <div class="product-prices">
+                        <div class="price">
+                          <s>R$ 100,00</s>
+                          <h2 class="title-medium">R$ 79,90</h2>
+                        </div>
+                        <a href="#" target="_blank" class="btn-off">10% Off</a>
+                      </div>
+                      <div class="product-footer">
+                        <p>Ou em até <span>10x de R$ 7,90</span></p>
+                        <button class="btn">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <span class="new-tag">Novo</span>
+                    <img
+                      src="./assets/imgs/photos/img-2.png"
+                      alt="Produto 1"
+                      class="product-img"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title body-large">
+                        Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                      </h3>
+                      <div class="product-prices">
+                        <div class="price">
+                          <s>R$ 100,00</s>
+                          <h2 class="title-medium">R$ 79,90</h2>
+                        </div>
+                        <a href="#" target="_blank" class="btn-off">10% Off</a>
+                      </div>
+                      <div class="product-footer">
+                        <p>Ou em até <span>10x de R$ 7,90</span></p>
+                        <button class="btn">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="carousel-btn next" id="next1">
+                <i class="bx bx-right-arrow-alt"></i>
+              </button>
+              <div class="carousel-dots" id="dot1">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!------  FEATURE 1 ------>
+        <section class="feature-1 section">
+          <div class="container">
+            <div class="feature-1-content">
+              <div class="feature-1-img">
+                <img
+                  src="./assets/imgs/photos/img-3.png"
+                  alt="caneca da avanti"
+                  class="img-cover"
+                  width="1020"
+                  height="690"
+                />
+              </div>
+              <div class="feature-1-info">
+                <h2 class="headline-medium feature-1-title">Lorem Ipsum</h2>
+                <div class="feature-1-text">
+                  <p class="title-small">
+                    Duis consectetur metus nec lacus auctor dignissim. Mauris
+                    vitae finibus dui. Mauris laoreet lacus ut eleifend viverra.
+                    Cras efficitur volutpat dui, in lobortis metus lacinia sit
+                    amet. Sed lacinia pharetra magna, vel pulvinar ligula
+                    hendrerit a. Maecenas fringilla porttitor tortor eget
+                    lacinia. Donec sollicitudin euismod orci, auctor fringilla
+                    magna consequat interdum. Fusce sagittis elit a libero
+                    commodo egestas efficitur id augue.
+                  </p>
+                  <p class="title-small">
+                    Duis consectetur metus nec lacus auctor dignissim. Mauris
+                    vitae finibus dui. Mauris laoreet lacus ut eleifend viverra.
+                    Cras efficitur volutpat dui, in lobortis metus lacinia sit
+                    amet. Sed lacinia pharetra magna, vel pulvinar ligula
+                    hendrerit a. Maecenas fringilla porttitor tortor eget
+                    lacinia. Donec sollicitudin euismod orci, auctor fringilla
+                    magna consequat interdum. Fusce sagittis elit a libero
+                    commodo egestas efficitur id augue.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!------ FEATURE 2 ------>
+        <section class="feature-2 section">
+          <div class="container">
+            <div class="feature-2-content">
+              <div class="feature-2-info">
+                <h2 class="headline-medium feature-2-title">Lorem Ipsum</h2>
+                <ul class="feature-2-list">
+                  <li class="feature-2-item">
+                    <div class="feature-2-icon">
+                      <img
+                        src="./assets/imgs/icons/local.png"
+                        alt="icon de localização"
+                      />
+                    </div>
+                    <p class="title-small text">
+                      Aenean massa. Cum sociis natoque penatibus et magnis dis
+                      parturient montes, nascetur ridiculus mus. Donec quam
+                      felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                    </p>
+                  </li>
+                  <li class="feature-2-item">
+                    <div class="feature-2-icon">
+                      <img
+                        src="./assets/imgs/icons/local.png"
+                        alt="icon de localização"
+                      />
+                    </div>
+                    <p class="title-small text">
+                      Aenean massa. Cum sociis natoque penatibus et magnis dis
+                      parturient montes, nascetur ridiculus mus. Donec quam
+                      felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                    </p>
+                  </li>
+                  <li class="feature-2-item">
+                    <div class="feature-2-icon">
+                      <img
+                        src="./assets/imgs/icons/local.png"
+                        alt="icon de localização"
+                      />
+                    </div>
+                    <p class="title-small text">
+                      Aenean massa. Cum sociis natoque penatibus et magnis dis
+                      parturient montes, nascetur ridiculus mus. Donec quam
+                      felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="feature-2-img">
+                <img
+                  src="./assets/imgs/photos/img-4.png"
+                  alt="caneca da Avaiten"
+                  class="img-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!------ REPITIÇÂO DO FEATURE 1 ------>
+        <section class="feature-1 section feature-3">
+          <div class="container">
+            <div class="feature-1-content">
+              <div class="feature-1-img">
+                <img
+                  src="./assets/imgs/photos/img-3.png"
+                  alt="caneca da avanti"
+                  class="img-cover"
+                  width="1020"
+                  height="690"
+                />
+              </div>
+              <div class="feature-1-info">
+                <h2 class="headline-medium feature-1-title">Lorem Ipsum</h2>
+                <div class="feature-1-text">
+                  <p class="title-small">
+                    Duis consectetur metus nec lacus auctor dignissim. Mauris
+                    vitae finibus dui. Mauris laoreet lacus ut eleifend viverra.
+                    Cras efficitur volutpat dui, in lobortis metus lacinia sit
+                    amet. Sed lacinia pharetra magna, vel pulvinar ligula
+                    hendrerit a. Maecenas fringilla porttitor tortor eget
+                    lacinia. Donec sollicitudin euismod orci, auctor fringilla
+                    magna consequat interdum. Fusce sagittis elit a libero
+                    commodo egestas efficitur id augue.
+                  </p>
+                  <p class="title-small">
+                    Duis consectetur metus nec lacus auctor dignissim. Mauris
+                    vitae finibus dui. Mauris laoreet lacus ut eleifend viverra.
+                    Cras efficitur volutpat dui, in lobortis metus lacinia sit
+                    amet. Sed lacinia pharetra magna, vel pulvinar ligula
+                    hendrerit a. Maecenas fringilla porttitor tortor eget
+                    lacinia. Donec sollicitudin euismod orci, auctor fringilla
+                    magna consequat interdum. Fusce sagittis elit a libero
+                    commodo egestas efficitur id augue.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!------ REPITIÇÂO DO CAROUSEL 1  ------>
+        <section class="carousel-section section carousel2" id="carousel2">
+          <div class="container">
+            <div class="carousel-content">
+              <h2 class="headline-small carousel-title">Lançamentos</h2>
+              <div class="carousel-link">
+                <a href="#" class="body-small">Ver mais</a>
+              </div>
+            </div>
+            <div class="carousels carousel2">
+              <button class="carousel-btn prev" id="prev2">
+                <i class="bx bx-left-arrow-alt"></i>
+              </button>
+
+              <div class="carousel-slides" id="carousel2-slides">
+                <div class="carousel-set set-1">
+                  <div class="card">
+                    <span class="new-tag">Novo</span>
+                    <img
+                      src="./assets/imgs/photos/img-2.png"
+                      alt="Produto 1"
+                      class="product-img"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title body-large">
+                        Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                      </h3>
+                      <div class="product-prices">
+                        <div class="price">
+                          <s>R$ 100,00</s>
+                          <h2 class="title-medium">R$ 79,90</h2>
+                        </div>
+                        <a href="#" target="_blank" class="btn-off">10% Off</a>
+                      </div>
+                      <div class="product-footer">
+                        <p>Ou em até <span>10x de R$ 7,90</span></p>
+                        <button class="btn">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <span class="new-tag">Novo</span>
+                    <img
+                      src="./assets/imgs/photos/img-2.png"
+                      alt="Produto 2"
+                      class="product-img"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title body-large">
+                        Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                      </h3>
+                      <div class="product-prices">
+                        <div class="price">
+                          <s>R$ 100,00</s>
+                          <h2 class="title-medium">R$ 79,90</h2>
+                        </div>
+                        <a href="#" target="_blank" class="btn-off">10% Off</a>
+                      </div>
+                      <div class="product-footer">
+                        <p>Ou em até <span>10x de R$ 7,90</span></p>
+                        <button class="btn">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <span class="new-tag">Novo</span>
+                    <img
+                      src="./assets/imgs/photos/img-2.png"
+                      alt="Produto 3"
+                      class="product-img"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title body-large">
+                        Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                      </h3>
+                      <div class="product-prices">
+                        <div class="price">
+                          <s>R$ 100,00</s>
+                          <h2 class="title-medium">R$ 79,90</h2>
+                        </div>
+                        <a href="#" target="_blank" class="btn-off">10% Off</a>
+                      </div>
+                      <div class="product-footer">
+                        <p>Ou em até <span>10x de R$ 7,90</span></p>
+                        <button class="btn">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-set set-2">
+                  <div class="card">
+                    <span class="new-tag">Novo</span>
+                    <img
+                      src="./assets/imgs/photos/img-2.png"
+                      alt="Produto 4"
+                      class="product-img"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title body-large">
+                        Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                      </h3>
+                      <div class="product-prices">
+                        <div class="price">
+                          <s>R$ 100,00</s>
+                          <h2 class="title-medium">R$ 79,90</h2>
+                        </div>
+                        <a href="#" target="_blank" class="btn-off">10% Off</a>
+                      </div>
+                      <div class="product-footer">
+                        <p>Ou em até <span>10x de R$ 7,90</span></p>
+                        <button class="btn">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <span class="new-tag">Novo</span>
+                    <img
+                      src="./assets/imgs/photos/img-2.png"
+                      alt="Produto 5"
+                      class="product-img"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title body-large">
+                        Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                      </h3>
+                      <div class="product-prices">
+                        <div class="price">
+                          <s>R$ 100,00</s>
+                          <h2 class="title-medium">R$ 79,90</h2>
+                        </div>
+                        <a href="#" target="_blank" class="btn-off">10% Off</a>
+                      </div>
+                      <div class="product-footer">
+                        <p>Ou em até <span>10x de R$ 7,90</span></p>
+                        <button class="btn">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <span class="new-tag">Novo</span>
+                    <img
+                      src="./assets/imgs/photos/img-2.png"
+                      alt="Produto 6"
+                      class="product-img"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title body-large">
+                        Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                      </h3>
+                      <div class="product-prices">
+                        <div class="price">
+                          <s>R$ 100,00</s>
+                          <h2 class="title-medium">R$ 79,90</h2>
+                        </div>
+                        <a href="#" target="_blank" class="btn-off">10% Off</a>
+                      </div>
+                      <div class="product-footer">
+                        <p>Ou em até <span>10x de R$ 7,90</span></p>
+                        <button class="btn">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <span class="new-tag">Novo</span>
+                    <img
+                      src="./assets/imgs/photos/img-2.png"
+                      alt="Produto 7"
+                      class="product-img"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title body-large">
+                        Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                      </h3>
+                      <div class="product-prices">
+                        <div class="price">
+                          <s>R$ 100,00</s>
+                          <h2 class="title-medium">R$ 79,90</h2>
+                        </div>
+                        <a href="#" target="_blank" class="btn-off">10% Off</a>
+                      </div>
+                      <div class="product-footer">
+                        <p>Ou em até <span>10x de R$ 7,90</span></p>
+                        <button class="btn">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-set set-3">
+                  <div class="card">
+                    <span class="new-tag">Novo</span>
+                    <img
+                      src="./assets/imgs/photos/img-2.png"
+                      alt="Produto 5"
+                      class="product-img"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title body-large">
+                        Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                      </h3>
+                      <div class="product-prices">
+                        <div class="price">
+                          <s>R$ 100,00</s>
+                          <h2 class="title-medium">R$ 79,90</h2>
+                        </div>
+                        <a href="#" target="_blank" class="btn-off">10% Off</a>
+                      </div>
+                      <div class="product-footer">
+                        <p>Ou em até <span>10x de R$ 7,90</span></p>
+                        <button class="btn">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <span class="new-tag">Novo</span>
+                    <img
+                      src="./assets/imgs/photos/img-2.png"
+                      alt="Produto 8"
+                      class="product-img"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title body-large">
+                        Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                      </h3>
+                      <div class="product-prices">
+                        <div class="price">
+                          <s>R$ 100,00</s>
+                          <h2 class="title-medium">R$ 79,90</h2>
+                        </div>
+                        <a href="#" target="_blank" class="btn-off">10% Off</a>
+                      </div>
+                      <div class="product-footer">
+                        <p>Ou em até <span>10x de R$ 7,90</span></p>
+                        <button class="btn">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <span class="new-tag">Novo</span>
+                    <img
+                      src="./assets/imgs/photos/img-2.png"
+                      alt="Produto 9"
+                      class="product-img"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title body-large">
+                        Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                      </h3>
+                      <div class="product-prices">
+                        <div class="price">
+                          <s>R$ 100,00</s>
+                          <h2 class="title-medium">R$ 79,90</h2>
+                        </div>
+                        <a href="#" target="_blank" class="btn-off">10% Off</a>
+                      </div>
+                      <div class="product-footer">
+                        <p>Ou em até <span>10x de R$ 7,90</span></p>
+                        <button class="btn">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <span class="new-tag">Novo</span>
+                    <img
+                      src="./assets/imgs/photos/img-2.png"
+                      alt="Produto 10"
+                      class="product-img"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title body-large">
+                        Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                      </h3>
+                      <div class="product-prices">
+                        <div class="price">
+                          <s>R$ 100,00</s>
+                          <h2 class="title-medium">R$ 79,90</h2>
+                        </div>
+                        <a href="#" target="_blank" class="btn-off">10% Off</a>
+                      </div>
+                      <div class="product-footer">
+                        <p>Ou em até <span>10x de R$ 7,90</span></p>
+                        <button class="btn">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="carousel-btn next" id="next2">
+                <i class="bx bx-right-arrow-alt"></i>
+              </button>
+
+              <div class="carousel-dots" id="dot2">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!------ FEATURE 4  ------>
+        <section class="feature-4">
+          <div class="feature-4-content">
+            <img
+              src="./assets/imgs/photos/img-1.png"
+              alt="Escritorio da Avanti"
+              class="img-cover"
+            />
+            <div class="feature-4-text">
+              <p class="body-medium">
+                Entre em contato conosco e verifique a disponibilidade para sua
+                região!
+              </p>
+            </div>
+          </div>
+        </section>
+        <!------  REGISTER  ------>
+        <section class="register section">
+          <div class="container">
+            <div class="content">
+              <h2 class="headline-small register-title">
+                Cadastre-se na nossa
+                <span class="register-color">newsletter</span>
+              </h2>
+              <form>
+                <div class="form-input">
+                  <input type="text" placeholder="Digite seu nome" />
+                  <input type="text" placeholder="Digite seu e-mail" />
+                </div>
+                <div class="check-box">
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="checkbox"
+                    class="checkbox-input"
+                  />
+                  <label for="checkbox" class="check-box-text">
+                    <p>
+                      Estou de acordo com a
+                      <span class="checkbox-link">Política de Privacidade</span>
+                    </p>
+                  </label>
+                </div>
+                <button class="btn">Cadastrar</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div class="rede-social">
+            <img src="./assets/imgs/icons/logo.png" alt="logo" />
+            <ul class="rede-social-list">
+              <li class="rede-social-item">
+                <a
+                  href="https://www.instagram.com/penseavanti/"
+                  target="_blank"
+                  class="rede-social-link"
+                >
+                  <i class="bx bxl-instagram"></i>
+                </a>
+              </li>
+              <li class="rede-social-item">
+                <a
+                  href="https://www.facebook.com/penseavanti/"
+                  target="_blank"
+                  class="rede-social-link"
+                >
+                  <i class="bx bxl-facebook"></i>
+                </a>
+              </li>
+              <li class="rede-social-item">
+                <a
+                  href="https://www.youtube.com/@penseavanti"
+                  target="_blank"
+                  class="rede-social-link"
+                >
+                  <i class="bx bxl-youtube"></i>
+                </a>
+              </li>
+              <li class="rede-social-item">
+                <a href="#" target="_blank" class="rede-social-link">
+                  <i class="bx bxl-tiktok"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-lists-desktop">
+            <div class="footer-list">
+              <div class="footer-item">
+                <h4>h4 Institucional</h4>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <h5>h5 Sobre Nós</h5>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <h5>h5 Nossas Lojas</h5>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <h5>h5 Privacidade e Segurança</h5>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <h5>h5 Termos e Condições</h5>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-item">
+                <h4>h4 Central de ajuda</h4>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <h5>h5 Fale Conosco</h5>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <h5>h5 Frete e Entrega</h5>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <h5>h5 Trocas e Devoluções</h5>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <h5>h5 Formas de Pagamento</h5>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <h5>h5 FAQ</h5>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-item">
+                <h4>h4 Atendimento</h4>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <h5><span>h5 Telefone:</span>(00) 1234-5678</h5>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <h5><span> h5 E-mail:</span>exemplo@exemplo.com</h5>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <h5>
+                        <span> h5 Horário de atendimento:</span>Segunda a
+                        Sábado: 07h00 às 23h00 Domingos e Feriados: 07h00 às
+                        21h00
+                      </h5>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-lists-mobile">
+            <ul class="mobile-footer-list">
+              <li class="mobile-footer-item">
+                <div class="mobile-footer-header">
+                  <h5 class="title-small">Institucional</h5>
+                  <i class="bx bx-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                  <ul class="list-accordion-content">
+                    <li class="body-medium text-accordion">Sobre Nós</li>
+                    <li class="body-medium text-accordion">Nossas Lojas</li>
+                    <li class="body-medium text-accordion">
+                      Privacidade e Segurança
+                    </li>
+                    <li class="body-medium text-accordion">
+                      Termos e Condições
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="mobile-footer-item">
+                <div class="mobile-footer-header">
+                  <h5 class="title-small">Central de ajuda</h5>
+                  <i class="bx bx-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                  <ul class="list-accordion-content">
+                    <li class="body-medium text-accordion">Fale Conosco</li>
+                    <li class="body-medium text-accordion">Frete e Entrega</li>
+                    <li class="body-medium text-accordion">
+                      Trocas e Devoluções
+                    </li>
+                    <li class="body-medium text-accordion">
+                      Formas de Pagamento
+                    </li>
+                    <li class="body-medium text-accordion">FAQ</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="mobile-footer-item">
+                <div class="mobile-footer-header">
+                  <h5 class="title-small">Atendimento</h5>
+                  <i class="bx bx-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                  <ul class="list-accordion-content">
+                    <li class="body-medium text-accordion">
+                      <span>Telefone:</span>
+                      (00) 1234-5678
+                    </li>
+                    <li class="body-medium text-accordion">
+                      <span>E-mail:</span>
+                      exemplo@exemplo.com
+                    </li>
+                    <li class="body-medium text-accordion">
+                      <span>Horário de atendimento:</span> Segunda a Sábado:
+                      07h00 às 23h00 Domingos e Feriados: 07h00 às 21h00
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="companies-1">
+          <ul class="companies-list">
+            <li class="companies-item">
+              <img
+                src="./assets/imgs/icons/amex.png"
+                alt="Amex"
+                class="img-cover"
+              />
+            </li>
+            <li class="companies-item">
+              <img
+                src="./assets/imgs/icons/mastercard.png"
+                alt="Mastercard"
+                class="img-cover"
+              />
+            </li>
+            <li class="companies-item">
+              <img
+                src="./assets/imgs/icons/visa.png"
+                alt="Visa"
+                class="img-cover"
+              />
+            </li>
+            <li class="companies-item">
+              <img
+                src="./assets/imgs/icons/hipercard.png"
+                alt="Hipercard"
+                class="img-cover"
+              />
+            </li>
+            <li class="companies-item">
+              <img
+                src="./assets/imgs/icons/elo.png"
+                alt="Elo"
+                class="img-cover"
+              />
+            </li>
+            <li class="companies-item">
+              <img
+                src="./assets/imgs/icons/diners-club.png"
+                alt="Diners Club"
+                class="img-cover"
+              />
+            </li>
+            <li class="companies-item">
+              <img
+                src="./assets/imgs/icons/paypal.png"
+                alt="Paypal"
+                class="img-cover"
+              />
+            </li>
+            <li class="companies-item">
+              <img
+                src="./assets/imgs/icons/pix.png"
+                alt="Pix"
+                class="img-cover"
+              />
+            </li>
+            <li class="companies-item">
+              <img
+                src="./assets/imgs/icons/icon-boleto.png"
+                alt="Boleto"
+                class="img-cover"
+              />
+            </li>
+          </ul>
+          <ul class="companies-list2">
+            <li class="companies-item">
+              <img src="./assets/imgs/icons/amex.png" alt="Amex" />
+              <img src="./assets/imgs/icons/mastercard.png" alt="Mastercard" />
+              <img src="./assets/imgs/icons/visa.png" alt="Visa" />
+              <img src="./assets/imgs/icons/hipercard.png" alt="Hipercard" />
+              <img src="./assets/imgs/icons/elo.png" alt="Elo" />
+            </li>
+
+            <li class="companies-item">
+              <img
+                src="./assets/imgs/icons/diners-club.png"
+                alt="Diners Club"
+              />
+              <img src="./assets/imgs/icons/paypal.png" alt="Paypal" />
+              <img
+                src="./assets/imgs/icons/pix.png"
+                alt="Pix"
+                class="img-cover"
+              />
+              <img
+                src="./assets/imgs/icons/icon-boleto.png"
+                alt="Boleto"
+                class="img-cover"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <div class="bottom-text">
+            <p class="body-medium">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+              consequat. Duis autem vel eum iriure dolor in hendrerit in
+              vulputate velit esse molestie consequat, vel illum dolore eu
+              feugiat nulla facilisis at vero eros et accumsan et iusto odio
+              dignissim qui blandit praesent luptatum zzril delenit augue duis
+              dolore te feugait nulla facilisi.
+            </p>
+          </div>
+          <div class="companies-2">
+            <ul class="companies-list">
+              <li class="companies-item">
+                <img
+                  src="./assets/imgs/icons/encrypt.png"
+                  alt="Let's Encrypt"
+                  class="img-cover"
+                />
+              </li>
+              <li class="companies-item">
+                <img
+                  src="./assets/imgs/icons/vtext-certified.png"
+                  alt="Vtex Certified"
+                  class="img-cover"
+                />
+              </li>
+              <li class="companies-item">
+                <img
+                  src="./assets/imgs/icons/avanti.png"
+                  alt="Avanti"
+                  class="img-cover"
+                />
+              </li>
+              <li class="companies-item">
+                <img
+                  src="./assets/imgs/icons/vtext.png"
+                  alt="Vtex"
+                  class="img-cover"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
