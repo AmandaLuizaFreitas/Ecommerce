@@ -26,7 +26,7 @@ function Search() {
     mobileBtn.addEventListener('click', () => {
       const query = mobileInput.value.trim();
       if (query) {
-        result.innerHTML = `Você buscou por: <strong> ${query} </strong>`;
+        result.innerHTML = `Você buscou por: <strong> ${query}</strong>`;
       } else {
         result.innerHTML = '';
       }

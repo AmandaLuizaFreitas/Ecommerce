@@ -828,8 +828,8 @@ form{
  /* ------------------  MEDIA  ------------------ */
  @media (min-width:768px){
     :root{
-      --fs-1: 60px;
-      --fs-2: 42px;
+      --fs-1: 6rem;
+      --fs-2: 4.2rem;
     }
     /* ===== REUSED STYLE ====== */
     .container{
