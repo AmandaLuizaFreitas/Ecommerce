@@ -4,7 +4,7 @@
 
 ### 🚀 Funcionalidades
 - Responsividade
-- Integração com API 
+- No campo de busca
 - Carrossel
 ###  🧰 Tecnologias Utilizadas
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
