@@ -21,8 +21,6 @@ function Search() {
     const mobileInput = document.getElementById('mobile-search-input');
     const mobileBtn = document.getElementById('mobile-search-button');
    
-    //Colocando um evento de click 
-  
     mobileBtn.addEventListener('click', () => {
       const query = mobileInput.value.trim();
       if (query) {
@@ -61,7 +59,7 @@ function Search() {
 //----------- CARROSSEL -----------
 function carousel(){
     document.addEventListener('DOMContentLoaded', () => {
-       // Função para inicializar um carrossel
+     
        function initCarousel(slidesId, prevId, nextId, dotId) {
            const slides = document.getElementById(slidesId);
            const sets = slides.querySelectorAll('.carousel-set');
@@ -72,11 +70,9 @@ function carousel(){
            let currentSet = 0;
            const setCount = sets.length;
            
-           // Função para atualizar a posição do carrossel
+           
            function updateCarousel() {
                slides.style.transform = `translateX(-${currentSet * 100}%)`;
-               
-               // Atualiza os indicadores
                indicators.forEach((indicator, index) => {
                    if (index === currentSet) {
                        indicator.classList.add('active');
@@ -86,19 +82,19 @@ function carousel(){
                });
            }
            
-           // Manipulador para o botão "próximo"
+          
            nextBtn.addEventListener('click', () => {
                currentSet = (currentSet + 1) % setCount;
                updateCarousel();
            });
            
-           // Manipulador para o botão "anterior"
+          
            prevBtn.addEventListener('click', () => {
                currentSet = (currentSet - 1 + setCount) % setCount;
                updateCarousel();
            });
            
-           // Adiciona manipuladores de eventos para os indicadores
+          
            indicators.forEach(indicator => {
                indicator.addEventListener('click', () => {
                    currentSet = parseInt(indicator.dataset.index);
@@ -106,7 +102,7 @@ function carousel(){
                });
            });
            
-           // Manipuladores de eventos de toque para dispositivos móveis
+         
            let touchStartX = 0;
            let touchEndX = 0;
            
@@ -120,15 +116,13 @@ function carousel(){
            });
            
            function handleSwipe() {
-               // Detecta a direção do deslize
+             
                if (touchEndX < touchStartX - 50) {
-                   // Deslize para a esquerda (próximo conjunto)
                    currentSet = (currentSet + 1) % setCount;
                    updateCarousel();
                }
                
                if (touchEndX > touchStartX + 50) {
-                   // Deslize para a direita (conjunto anterior)
                    currentSet = (currentSet - 1 + setCount) % setCount;
                    updateCarousel();
                }
